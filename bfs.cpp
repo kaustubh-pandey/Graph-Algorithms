@@ -8,9 +8,9 @@ void BFS(vector<int> G[],int n){
    q.push(0);
    while(!q.empty()){
       int curr_node = q.front();
-      cout<< curr_node <<" ";
       q.pop();
       if(!visited[curr_node]){
+          cout<< curr_node <<" ";
           visited[curr_node] = true;
           for(int x:G[curr_node]){
                if(!visited[x])
